@@ -1,0 +1,278 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Joseph}{McKinsey}{
+\href{mailto:josephmckinsey2@gmail.com}{josephmckinsey2@gmail.com} \, | \,
+719.210.8165 \, | \, 323 Van Gordon St, Lakewood, CO \\
+  \href{mailto:joesphmckinsey@mymail.mines.edu}{josephmckinsey@mymail.mines.edu}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.42\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Colorado School of Mines}
+\descript{BS in progress in Applied Mathematics and Statistics}
+\location{Aug. 2017 - Dec. 2019 \, | \, Golden, CO}
+Computational Applied Mathematics \\
+\location{ Cum. GPA: 4.0}
+\sectionsep
+
+\subsection{UCCS}
+\descript{Online courses in math taken concurrently in high school}
+\location{January 2015 - May 2017}
+\sectionsep
+
+\subsection{Air Academy High School}
+\location{Aug. 2013 - May 2017 \, | \, Colorado Springs, CO}
+Summa Cum Laude\\
+\location{ Cum. Unweighted GPA: 4.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 1000 lines:} Python \textbullet{} MATLAB \textbullet{} \LaTeX
+\textbullet{} C++ \textbullet{}
+Haskell \textbullet{} Java \textbullet{} SageMath \textbullet{} Bash \\
+\location{Familiar:}
+R \textbullet{} Rust \textbullet{} Coq \textbullet{} Kotlin \textbullet{} C
+\textbullet{}  Fortran \textbullet{} CSS \textbullet{} HTML \\
+\sectionsep
+
+\subsection{Misc.}
+Linux \textbullet{} Microsoft Word \textbullet PowerPoint \textbullet Excel \\
+Organized \textbullet{} Good time-management skills \\
+Optics Lab safety \textbullet{} Optics Techniques \textbullet{} Solidworks \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \, \href{https://github.com/josephmckinsey}{\bf https://github.com/josephmckinsey} \\
+LinkedIn:// \, \href{https://www.linkedin.com/in/joseph-mckinsey-356195146/}{\bf https://www.linkedin.com/in/joseph-mckinsey-356195146} \\
+\sectionsep
+
+\section{Activities}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Racquetball Club
+\item ACM - American Computing Machinery Club
+\item Putnam Club
+\item LUG - Linux Users Group
+%\item Rock Climbing
+\item Math Club + Recreational Math Club
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.55\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Work Experience}
+
+\runsubsection{Arthur Lakes Library}
+\descript{| ILL Assistant}
+\descript{Interlibrary Loans Lending: Searching and scanning}
+\location{Aug. 2017 - Present | Golden, CO}
+\sectionsep
+
+\runsubsection{UCCS Optics Lab}
+\descript{| Intern}
+\descript{Assisting with preparation of liquid crystal cells}
+\location{May 2017 – Aug. 2017 | Colorado Springs, CO}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Optics Lab Techniques, Safety, and Clean Room Use.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TEAM PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Team Project Experience}
+\runsubsection{Mines Mathematical Biology Project}
+\descript{| Evolutionary Game Theory for
+  \textit{Uta stansburiana}}
+\location{May 2018}
+\vspace{\topsep}
+\begin{tightemize}\item Developed model of lizard evolution with final report
+and presentation.
+\item Used MATLAB, systems of nonlinear differential equations, and game theory.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Applied Math Field Session}
+\descript{| General Team-Based Modeling Course}
+\location{June 2018}
+\vspace{\topsep}
+\begin{tightemize}\item Worked on modeling or algorithmic problems each week.
+\item Used graph theory, algorithms, and simulation. Typically in MATLAB,
+Python, and Haskell, all with \LaTeX.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Mines EPICS - Engineering Design Project}
+\descript{| Improve Urban Infrastructure}
+\location{Jan. 2018 - May 2018}
+\vspace{\topsep}
+\begin{tightemize}\item Created hydrophobic bridge cover for snow.
+\item Created final engineering report, prototype, and presentation.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+\begin{minipage}[t]{0.45\textwidth} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Diff. Eq. Linear Algebra
+\item Modern Physics I
+\item Intro to Probability
+\item Data Structures
+\item EPICS, Math. Physics
+\item Discrete Mathematics
+\item Math. Biology
+\item Algorithms
+\end{tightemize}
+\end{minipage}
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Into. to Math Modeling
+\item Scientific Computing
+\item Computational Diff. Eq.
+\item Intro. to Analysis
+\item Complex Analysis
+\item Number Theory
+\item Abstract Algebra
+\item Partial Diff. Eq.
+\end{tightemize}
+\end{minipage}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+\end{minipage} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+Fall 2018 & Nasdaq C-MAPP Fellow & Comp. Sci. Scholarship \\
+Fall 2017 - Present & Mines Dean's Honors List & For continuous 4.0 GPA \\
+Spring 2018 & Runner-up to Oppenheimer Award. & Competition for Ethics Related Papers in the NHV course \\
+Fall 2017 & Putnam Exam: \(11\)pt & Mathematical Proof Competition \\
+Spring 2017 & Knowledge Bowl & 3rd in state competition. \\
+2016	     & CSM Medal of Achievement in Math and Science & Mines award for promising high schoolers. \\
+%$2015 & Southern Colorado Science Olympiad Regionals & 1st Chemistry Lab, 2nd Place TPS, 3rd Geologic Mapping \\
+\end{tabular}
+
+\end{document}
+
+%%% Local Variables:
+%%% TeX-engine: xetex
+%%% End:
